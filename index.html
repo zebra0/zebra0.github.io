@@ -169,7 +169,7 @@
   
     <div class="article-meta">
       <a href="/2016/03/07/CTFGAME_week1/" class="article-date">
-  	<time datetime="2016-03-06T17:19:41.941Z" itemprop="datePublished">2016-03-07</time>
+  	<time datetime="2016-03-06T17:23:33.370Z" itemprop="datePublished">2016-03-07</time>
 </a>
     </div>
   
@@ -183,33 +183,7 @@
         <p>#CTFGAME_week1</p>
 <hr>
 <p>过了week1感觉需要多看书了，还有不会python的话会很惨。</p>
-<p>##WEB从0开始之PHP代码审计0 </p>
-<p>考查php弱类型，通过传入$array来绕过函数的检验null。 我是看<a href="http://drops.wooyun.org/tips/4483" target="_blank" rel="external">这篇文章</a>学到的<br>构造成 <code>?name[]=1&amp;password[]=3</code>的样子即可得到flag</p>
-<p><img src="http://7xr0ty.com1.z0.glb.clouddn.com/10.PNG" alt=""></p>
-<p>##密码学从0开始之1.1 </p>
-<p>打开之后F12发现有个注释里全是二进制，一开始以为是7bit ASCII 或者是 8bit ASCII。后来发现是png图片</p>
-<p><img src="http://7xr0ty.com1.z0.glb.clouddn.com/11.PNG" alt=""><br>这个工具<code>字符信息与二进制</code> 百度一下可以下到<br>还需要用到一个16进制编辑器<code>winhex</code> 百度同样可以下到<br>复制一下16进制数里的内容<br>在winhex新建一个文件 鼠标右键-&gt;编辑-&gt;剪贴板数据-&gt;写入-&gt;选择<code>ASCII Hex</code><br>另存为到 <code>你找得到的位置</code> 然后对其重命名为XXX.png<br>然后打开它…</p>
-<p><img src="http://7xr0ty.com1.z0.glb.clouddn.com/12.PNG" alt=""></p>
-<p>##MISC从0开始之流量分析1</p>
-<p>下载下来丢进wireshark<br>然后File-&gt;Export Objects-&gt;HTTP<br>发现有个名为flag的文件选中它之后然后save as  找到那个文件对其重命名为”xxx.rar” 解压完还是得到一个名为flag的文件用winhex打开得到flag<br>(感觉我的做题过程略显诡异与麻烦）<br><img src="http://7xr0ty.com1.z0.glb.clouddn.com/13.PNG" alt=""></p>
-<p>##密码学从0开始之1</p>
-<p>点横之类的感觉是摩斯电码 百度一下在线摩斯电码解密 </p>
-<p>##MISC从0开始之编码1</p>
-<p>base全家桶 不会python有不会python的<a href="http://pbaseconverter.com/" target="_blank" rel="external">办法</a><br>先用base16转一下，base32转不了？别着急 删掉等号再转base32 最后转base64 得flag<br>base32是个坑<br><img src="http://7xr0ty.com1.z0.glb.clouddn.com/14.PNG" alt=""></p>
-<p>##lightless&amp;aklis的渗透教室-2 </p>
-<p>如图发送post请求</p>
-<p><img src="http://7xr0ty.com1.z0.glb.clouddn.com/15.PNG" alt=""></p>
-<p>得到响应 咦 不在这</p>
-<p><img src="http://7xr0ty.com1.z0.glb.clouddn.com/16.PNG" alt=""></p>
-<p>找一下原始数据</p>
-<p><img src="http://7xr0ty.com1.z0.glb.clouddn.com/17.PNG" alt=""></p>
-<p>##MISC 驾驶技术科目一 </p>
-<p>还是丢到wireshark里<br>然后File-&gt;Export Objects-&gt;HTTP<br>好像是浏览记录有很多图片文本啥的<br>莫名的出现了个奇怪的cad1.php还是来自ak老司机<br><img src="http://7xr0ty.com1.z0.glb.clouddn.com/18.PNG" alt=""><br>下下来看看是啥<br><img src="http://7xr0ty.com1.z0.glb.clouddn.com/19.PNG" alt=""><br>是个base64 解码一下得到flag</p>
-<p>##MISC 驾驶技术科目二</p>
-<p>科目一里的flag的{}里面还是base64解一下得到科目二的入口</p>
-<p>得到ak老司机的支付宝图片<br>另存为到本地之后</p>
-<p>###朋友，你混贴吧吗？你听说过<a href="http://baike.baidu.com/view/7114230.htm" target="_blank" rel="external">图种</a>吗？<br>把后缀改为.zip <code>不是rar</code><br>解压得到二维码 扫之得flag</p>
-
+<p>##WEB从0开始之PHP代码审计0<br>
       
     </div>
     
@@ -218,6 +192,10 @@
       
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/03/07/CTFGAME_week1/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -239,7 +217,7 @@
   
     <div class="article-meta">
       <a href="/2016/03/07/CTFGAME-week0/" class="article-date">
-  	<time datetime="2016-03-06T17:19:41.932Z" itemprop="datePublished">2016-03-07</time>
+  	<time datetime="2016-03-06T17:23:33.360Z" itemprop="datePublished">2016-03-07</time>
 </a>
     </div>
   
@@ -254,25 +232,7 @@
 <p> 说起来week0的感想大概是：</p>
 <blockquote>
 <ul>
-<li>用好google</li>
-</ul>
-</blockquote>
-<p>##WEB从0开始之0.2<br>由提示得出要伪造一个cookie，用fiddler伪造如下cookie<br><img src="http://7xr0ty.com1.z0.glb.clouddn.com/%E6%8D%95%E8%8E%B73.PNG" alt=""><br>显然<br><img src="http://7xr0ty.com1.z0.glb.clouddn.com/%E6%8D%95%E8%8E%B74.PNG" alt=""></p>
-<p>##MISC从0开始之流量分析0<br> 一个pcap文件用wireshark打开搜索含有flag的响应<br> <img src="http://7xr0ty.com1.z0.glb.clouddn.com/%E6%8D%95%E8%8E%B75.PNG" alt=""></p>
-<h2 id="MISC从0开始之Steganography0"><a href="#MISC从0开始之Steganography0" class="headerlink" title="MISC从0开始之Steganography0"></a>MISC从0开始之Steganography0</h2><p>网页打开发现是一张图片另存为之后直接丢<code>notepad++</code><br><img src="http://7xr0ty.com1.z0.glb.clouddn.com/%E6%8D%95%E8%8E%B76.PNG" alt=""></p>
-<p>##step0<br>下个断点跑一下就好<br><img src="hhttp://7xr0ty.com1.z0.glb.clouddn.com/%E6%8D%95%E8%8E%B77.PNG" alt=""></p>
-<p>##CTF coding step0<br>一开始以为要手工后来被提示要用管道Ubuntu下一行代码  <code>echo &quot;A/n&quot; | nc 115.29.77.78 9999</code></p>
-<p>##lightless的渗透教室-1<br>一开始想偏了 对http理解还是太肤浅 后来想到两个请求可以包含在一个请求中</p>
-<p><img src="http://7xr0ty.com1.z0.glb.clouddn.com/8.PNG" alt=""></p>
-<p>##WEB从0开始之0.1<br>印象中是抓了个302包 然后http头部有flag </p>
-<p>##WEB从0开始之0</p>
-<p>隐藏的很隐蔽 在MISC下的一条js响应中</p>
-<p><img src="http://7xr0ty.com1.z0.glb.clouddn.com/9.PNG" alt=""></p>
-<p>##MISC从0开始之编码0</p>
-<p>base64</p>
-<p>##密码学从0开始之0</p>
-<p>凯撒密码 然后根据hctf的位置推算一下偏移量 得flag</p>
-
+<li>用好google
       
     </div>
     
@@ -281,6 +241,10 @@
       
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/03/07/CTFGAME-week0/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
